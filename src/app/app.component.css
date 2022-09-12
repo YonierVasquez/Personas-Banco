@@ -4,3 +4,7 @@
 .btn-title-add {
     margin-left: 8px;
 }
+.line-divider {
+    margin: 20px 0;
+    border-top-color: rgb(84 84 84 / 32%);
+}
