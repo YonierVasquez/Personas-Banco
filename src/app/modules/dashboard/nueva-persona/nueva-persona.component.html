@@ -1,12 +1,12 @@
 <section class="ventana-container">
     <h2>Nueva persona</h2>
     <p>Nombre completo</p>
-    <input type="text" placeholder="Jennifer Castaño">
+    <input type="text" placeholder="Jennifer Castaño" [(ngModel)]="nombreCompleto">
     <p>Cedula</p>
-    <input type="text" placeholder="10 277 337">
+    <input type="text" placeholder="10 277 337" [(ngModel)]="cedula">
 
     <div class="btn-container">
         <button mat-raised-button color="primary" class="btn btn-danger" routerLink="">Cancelar</button>
-        <button mat-raised-button color="primary"class="btn btn-primary">Guardar</button>
+        <button mat-raised-button color="primary"class="btn btn-primary" (click)="guardarPersona()">Guardar</button>
     </div>
 </section>

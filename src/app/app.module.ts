@@ -9,6 +9,7 @@ import { NuevaPersonaComponent } from './modules/dashboard/nueva-persona/nueva-p
 import { MainComponent } from './modules/dashboard/main/main.component';
 import { RouterModule } from '@angular/router';
 import { PersonaComponent } from './modules/dashboard/persona/persona.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { PersonaComponent } from './modules/dashboard/persona/persona.component'
     RouterModule,
     BrowserAnimationsModule,
     MatButtonModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

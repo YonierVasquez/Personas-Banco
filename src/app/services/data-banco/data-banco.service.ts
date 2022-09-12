@@ -14,7 +14,7 @@ export class DataBancoService {
   constructor() { }
 
   public static obtenerObjetoBanco(): Banco {
-    // banco de prueba
+    // BANCO DE PRUEBA
     let banco: Banco = new Banco("Bancolombia");
 
     // dos personas
@@ -38,5 +38,27 @@ export class DataBancoService {
     banco.agregarPersona(persona2);
 
     return banco;
+
+    // obtener el objeto banco del localStorage
+    // let contenidoBanco = localStorage.getItem("banco");
+    // if (contenidoBanco == null) {
+    //   let banco: Banco = new Banco("Bancolombia");
+    //   localStorage.setItem("banco", JSON.stringify(banco));
+    //   return banco;
+    // } else {
+    //   let banco: Banco = JSON.parse(contenidoBanco);
+    //   return banco;
+    // }
+
   }
+
+  static guardarPersona(persona: Persona) {
+    // let banco: Banco = DataBancoService.obtenerObjetoBanco();
+    // banco.agregarPersona(persona);
+
+    // // guardar en el localStorage
+    // localStorage.setItem("banco", JSON.stringify(banco));
+  }
+
+
 }

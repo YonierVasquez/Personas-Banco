@@ -8,7 +8,7 @@ export class Banco {
         this.nombre = nombre;
     }
 
-    public agregarPersona(persona: Persona): void {
+    agregarPersona(persona: Persona): void {
         this.personas.push(persona);
     }
 }
