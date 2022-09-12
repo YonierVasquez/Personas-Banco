@@ -1,3 +1,6 @@
 <h1>Inmuebles y propiedades</h1>
-<button class="btn-add" mat-raised-button color="primary">Nueva persona</button>
+<button mat-raised-button color="primary">Nueva persona</button>
+<main class="lista-personas">
+    <app-persona *ngFor="let persona of banco.personas" [persona]="persona"></app-persona>
+</main>
 <router-outlet></router-outlet>

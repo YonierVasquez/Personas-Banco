@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Banco } from './class/banco.class';
+import { DataBancoService } from './services/data-banco/data-banco.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'personas-banco';
+  public banco: Banco;
+
+  constructor() {
+    this.banco = DataBancoService.obtenerObjetoBanco();
+  }
 }

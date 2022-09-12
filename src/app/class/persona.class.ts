@@ -1,13 +1,17 @@
 import { Pertenencia } from "./pertenencia.class";
 
 export class Persona {
-    private cedula: string;
-    private nombreCompleto: string;
-    private pertenencias: Array<Pertenencia>;
+    public cedula: string;
+    public nombreCompleto: string;
+    public pertenencias: Array<Pertenencia>;
 
-    constructor(cedula: string, nombreCompleto: string) {
+    constructor(nombreCompleto: string, cedula: string) {
         this.cedula = cedula;
         this.nombreCompleto = nombreCompleto;
         this.pertenencias = new Array<Pertenencia>();
+    }
+
+    public agregarPertenencia(pertenencia: Pertenencia): void {
+        this.pertenencias.push(pertenencia);
     }
 }
