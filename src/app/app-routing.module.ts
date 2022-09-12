@@ -7,6 +7,10 @@ const routes: Routes = [
   {
     path: '',
     component: MainComponent
+  },
+  {
+    path: 'nueva-persona',
+    component: NuevaPersonaComponent
   }
 ];
 

@@ -1,0 +1,15 @@
+.persona-container {
+    background-color: blueviolet;
+    padding: 8px;
+}
+.persona-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.persona-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
